@@ -1,0 +1,300 @@
+@import url('reset.css');
+@import url('client.css');
+@import url('slider.css');
+
+/******************************************************/
+html, body {
+  margin: 0px 0px;
+  padding: 0px;
+  border: 0px;
+  background-color: #F6F6F6;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+ {
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+}
+
+p,
+a,
+span
+ {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	opacity: .9;
+}
+
+li {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	}
+
+
+
+.wrapper{
+	width: 100%;
+	height: 100%;
+	min-height: 100%;
+	overflow: hidden;
+	position: absolute;
+}
+.topbar {
+	height: 60px;
+	width: 100%;
+	background-color: #373E42;
+	position: absolute;
+}
+.logo {
+	float: left;
+	margin-left: 20px;
+	padding: 20px 10px;
+}
+.sidebar {
+	width: 100%;
+	min-width: 150px;
+	background-color: #373E42;
+	height: 100%;
+	margin-bottom: -5000px;
+	padding-bottom: 5000px;
+	overflow: visible;
+	position: absolute;
+	right: 0;
+}
+.mainMenu {
+	position: relative;
+}
+.account{
+	background-color: #E69D79;
+	width: 100%;
+	height: auto; 
+}
+
+.account:hover{
+	background-color: #d2835c;
+	height: 60px;
+	width: 100%;
+}
+.menu {
+	margin-bottom: 80px;
+	position: relative;
+}
+
+ul.menu {
+	position: relative;
+}
+.menu li{
+	list-style: none;
+	padding: 20px 0;
+	text-align: center;
+	text-transform: uppercase;
+	color: #f5f5f5;
+	border-bottom: 1px solid;
+	border-color: #262F34;
+	position: relative;
+	-webkit-transition: background-color 200ms linear;
+	-moz-transition: background-color 200ms linear;
+	-o-transition: background-color 200ms linear;
+	 -ms-transition: background-color 200ms linear;
+	transition: background-color 200ms linear;
+}
+.menu li a{
+	height: 60px;
+	width: auto;
+	display: block;
+
+}
+.menu li:hover{
+	background-color: #202a2f;
+	opacity: 1;
+	-webkit-transition: opacity 200ms ease-in-out;
+	-moz-transition: opacity 200ms  ease-in-out;
+	-o-transition: opacity 200ms  ease-in-out;
+	 -ms-transition: opacity 200ms  ease-in-out;
+	transition: opacity 200ms ease-in-out;
+}
+
+.menu li:hover:before{
+	width: 0; 
+	height: 0; 
+	border-top: 20px solid transparent;
+	border-bottom: 20px solid transparent;
+	border-right: 20px solid #202a2f;
+   	position: absolute;
+    	content: " ";
+	left: -10px;
+	bottom: 5px;
+	opacity: 1;
+	-webkit-transition: opacity 0.5s ease-in-out;
+	-moz-transition: opacity 0.5s  ease-in-out;
+	-o-transition: opacity 0.5s  ease-in-out;
+	 -ms-transition: opacity 0.5s  ease-in-out;
+	transition: opacity 0.5s ease-in-out;
+
+}
+
+.menu li:hover:after{
+	opacity: 1;
+	-webkit-transition: opacity 0.5s ease-in-out;
+	-moz-transition: opacity 0.5s  ease-in-out;
+	-o-transition: opacity 0.5s  ease-in-out;
+	 -ms-transition: opacity 0.5s  ease-in-out;
+	transition: opacity 0.5s ease-in-out;
+}
+.account{
+	height: 60px;
+	-webkit-transition: background-color 200ms linear;
+	-moz-transition: background-color 200ms linear;
+	-o-transition: background-color 200ms linear;
+	 -ms-transition: background-color 200ms linear;
+	transition: background-color 200ms linear;
+}
+.account p{
+	text-align: center;
+	padding: 20px 0;
+	text-transform: uppercase;
+	color: #f5f5f5;
+}
+.recentClients {
+	margin: 0 auto;
+	width: 95px;
+	height: 200px;
+}
+
+.recentClients li{
+
+}
+.mainContainer {
+	width: 100%;	
+	height: auto;
+	margin-bottom: 100px;
+	position: absolute;
+	z-index: 4;
+	top: 80px;
+
+}
+.titleBar {	
+	margin: 10px;
+	width: 100%;
+}
+.title {	
+	height: 50px;
+	width: 100%;	
+	padding: 10px;
+	float: left;
+}
+.clientName{
+	float: left;
+	height: 50px;
+	width: auto;
+}
+.clientName h1{
+	text-align: left;
+	font-size: 2em;
+	font-weight: 800;
+	padding: 10px 31px;
+	color: #373E42;
+	letter-spacing: .04em;
+}
+.generator {
+	width: 230px;
+	height: 26px;
+	background-color: #19A47B;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	float: left;
+	margin-top: 13px;
+	-webkit-transition: background-color 200ms linear;
+	-moz-transition: background-color 200ms linear;
+	-o-transition: background-color 200ms linear;
+	 -ms-transition: background-color 200ms linear;
+	transition: background-color 200ms linear;
+
+}
+.generator p{
+	color: #fff;	
+	text-transform: uppercase;
+	font-weight: 500;
+	line-height: 28px;
+}
+
+.generator:hover{
+	background-color: #078D61;
+}
+
+.clientMenu ul{
+	top: 0;
+	padding-left: 100px;
+}
+.clientMenu li{
+	list-style: none;
+	float: left;
+	padding: 0px 0px 10px 40px;
+	text-transform: uppercase;
+}
+
+.leftColumn {
+	width: 88%;
+	height: auto;
+	position: absolute;
+	left: 0;
+
+}
+
+.moduleWrapper{
+	height: auto;
+	padding: 20px;
+	position: absolute;
+	top: 100px;
+}
+.module {
+	width: 46%;
+	padding: 19px;
+	float: left;
+	background-color: #FFF;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	margin-left: 10px;
+}
+
+
+.moduleContent  {
+	color: #727272;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 800;
+	text-align: left;
+	cler: right;
+
+}
+.contentSet{
+	display: inline;
+}
+
+
+.moduleLabel  {
+	font-size: 12px;
+	color: #C6B6A7;
+	text-transform: uppercase;
+	text-align: left;
+}
+
+.moduleLabel .moduleContent span{
+	font-size: 12px !important;
+}
+
+.rightColumn {
+	width: 12%;
+	height: auto;
+	position: absolute;
+	right: 0;
+	z-index: 6;
+}

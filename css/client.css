@@ -1,0 +1,25 @@
+.clientSearch{
+
+}
+
+.clientWrapper{
+	width: 100%;
+	position: relative;
+	height: auto;
+}		
+
+.client{
+	position: relative;ge
+	width: 100%;
+	height: auto;
+	background-color: #fff;
+	padding: 10px;
+}
+
+.client2{
+	position: relative;
+	width: 100%;
+	height: auto;
+	background-color: #tj;
+	padding: 10px;
+}

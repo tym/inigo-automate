@@ -1,0 +1,30 @@
+.cdPanel {
+	/*...*/
+  	visibility: hidden;
+	transition: visibility 0s 0.6s;
+}
+ 
+.cdPanel.isVisible {
+	visibility: visible;
+	transition: visibility 0s 0s;
+}
+
+.cdPanelContainer {
+	/*...*/
+	position: fixed;
+	width: 90%;
+	height: 100%;
+	top: 0;
+	right: 0;
+ 
+	transition-property: transform;
+	transition-duration: 0.3s;
+	transition-delay: 0.3s;
+ 
+ 	transform: translate3d(100%, 0, 0);
+}
+ 
+.isVisible .cdPanelContainer {
+	transform: translate3d(0, 0, 0);
+	transition-delay: 0s;
+}
